@@ -1,0 +1,29 @@
+class A(object):
+#    __slots__ = ('name', 'age')
+    
+    #def __init__(self, name, age):
+    #    name(nam)
+    #    age(age)
+
+    @property
+    def name(self):
+        return self.name
+
+    @property
+    def age(self):
+        return self.age
+
+    @name.setter
+    def name(self, name):
+        self._name = name
+
+    @age.setter
+    def age(self, age):
+        self._age = age
+
+a = A()
+a.name = 'aaa'
+a.age =333 
+
+print(a.age)
+print(a.name)
